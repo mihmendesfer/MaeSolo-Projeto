@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    --background: 340 100% 99%;
+    --foreground: 294 72% 16%;
+    --card: 0 0% 100%;
+    --card-foreground: 294 72% 16%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 294 72% 16%;
+    --primary: 335 100% 59%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 340 100% 95%;
+    --secondary-foreground: 294 72% 16%;
+    --muted: 340 50% 96%;
+    --muted-foreground: 320 9% 50%;
+    --accent: 338 100% 73%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 340 30% 90%;
+    --input: 340 30% 92%;
+    --ring: 335 100% 59%;
+    --chart-1: 335 100% 59%;
+    --chart-2: 338 100% 73%;
+    --chart-3: 294 72% 16%;
+    --chart-4: 20 90% 60%;
+    --chart-5: 45 80% 55%;
+    --radius: 1rem;
+    --sidebar-background: 340 100% 99%;
+    --sidebar-foreground: 294 72% 16%;
+    --sidebar-primary: 335 100% 59%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 340 100% 95%;
+    --sidebar-accent-foreground: 294 72% 16%;
+    --sidebar-border: 340 30% 90%;
+    --sidebar-ring: 335 100% 59%;
+  }
+
+  .dark {
+    --background: 240 10% 9%;
+    --foreground: 240 4% 96%;
+    --card: 240 12% 12%;
+    --card-foreground: 240 4% 96%;
+    --popover: 240 12% 12%;
+    --popover-foreground: 240 4% 96%;
+    --primary: 335 100% 59%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 11% 16%;
+    --secondary-foreground: 240 4% 90%;
+    --muted: 240 11% 15%;
+    --muted-foreground: 240 6% 60%;
+    --accent: 338 100% 73%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 11% 20%;
+    --input: 240 11% 18%;
+    --ring: 335 100% 59%;
+    --chart-1: 335 100% 59%;
+    --chart-2: 338 100% 73%;
+    --chart-3: 294 72% 70%;
+    --chart-4: 20 90% 60%;
+    --chart-5: 45 80% 60%;
+    --sidebar-background: 240 12% 10%;
+    --sidebar-foreground: 240 4% 90%;
+    --sidebar-primary: 335 100% 59%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 11% 16%;
+    --sidebar-accent-foreground: 240 4% 90%;
+    --sidebar-border: 240 11% 20%;
+    --sidebar-ring: 335 100% 59%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  button {
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Parceiro",
+  "type": "object",
+  "properties": {
+    "nome_empresa": {
+      "type": "string",
+      "description": "Nome da empresa parceira"
+    },
+    "descricao_oferta": {
+      "type": "string",
+      "description": "Descri\u00e7\u00e3o do desconto ou oferta"
+    },
+    "validade": {
+      "type": "string",
+      "format": "date",
+      "description": "Data de validade da oferta"
+    }
+  },
+  "required": [
+    "nome_empresa",
+    "descricao_oferta"
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": true,
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}
